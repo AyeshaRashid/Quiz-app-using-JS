@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url("images/flagc.jpg");
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.welcome {
+    width: 400px;
+}
+
+.form input, .form button {
+    display: block;
+    width: 100%;
+}
+
+.form input {
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(14, 11, 13);
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+}
+
+.form button {
+    padding: 10px 0;
+    font-size: 20px;
+    border-color: black;
+    border-radius: 0px;
+    background-color: black;
+    color: rgb(146, 210, 235);
+    transition: .4s all;
+}
+
+.form button:focus {
+    outline: none;
+}
+
+.quiz {
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+
+.quiz_header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    font-size: 30px;
+}
+
+.quiz_body {
+    background-color: none;
+    font-size: 25px;
+    padding: 30px 60px;
+}
+
+.namestyling, .timer {
+    color: white;
+    background-color: black;
+}
+
+.ul {
+    margin-top: 20px;
+}
+
+.option {
+    list-style-type: none;
+    background-color: black;
+    width: 50%;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 120;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.nextques {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 7px 20px;
+    border: 1px solid black;
+    border-radius: 0px;
+    transition: .4s all;
+    margin-top: 50px;
+}
+
+.nextques:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.nextques:focus {
+    outline: none;
+}
+
+.active {
+    background-color: white;
+    color: black !important;
+}
+
+table {
+    border: 2px solid black;
+}
+
+table tr td {
+    padding: 50px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 800px) {
+    .quiz {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .quiz {
+        width: 550px;
+        height: 300px;
+    }
+    .start {
+        padding: 100px 25px;
+    }
+    .welcome {
+        padding: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .start {
+        padding: 100px 25px;
+    }
+    .welcome {
+        padding: 50px 20px;
+    }
+    .quiz {
+        width: 500px;
+        height: 400px;
+    }
+    .option {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .quiz {
+        width: 350px;
+        height: 300px;
+    }
+    .option {
+        width: 100%;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .quiz_header {
+        padding: 10px;
+    }
+    .wrapper {
+        align-items: flex-start;
+        margin: 0;
+    }
+    .end {
+        padding: 15px;
+    }
+    table tr td {
+        font-size: 25px;
+        padding: 10px;
+    }
+    .start {
+        padding: 180px 25px;
+    }
+    .welcome {
+        padding: 50px 20px;
+    }
+    .form input{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .text {
+        font-size: 15px;
+    }
+    .quiz_header {
+        font-size: 15px;
+    }
+    .option {
+        font-size: 15px;
+    }
+    .end {
+        padding: 15px 5px;
+    }
+    table tr td {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .quiz {
+        width: 300px;
+        height: 520;
+    }
+    .quiz_header {
+        font-size: 15px;
+    }
+    .option {
+        font-size: 10px;
+        width: 110%;
+    }
+    .wrapper {
+        height: 120vh;
+        align-items: flex-start;
+    }
+    .tropy {
+        font-size: 200px;
+        margin-left: 5%;
+    }
+    .usname, .point {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .quiz_header {
+        font-size: 10px;
+        padding: 0px 10px;
+    }
+    .option {
+        font-size: 10px;
+    }
+    .end {
+        padding: 15px;
+    }
+    table tr td {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
